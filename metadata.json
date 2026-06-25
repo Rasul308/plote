@@ -1,0 +1,6 @@
+{
+  "name": "plote",
+  "description": "PLOTE - your ultimate gateway to knowledge. A map-based geography, history, and sports quiz web app with dynamic segments, coordinate spheres, and featured daily missions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

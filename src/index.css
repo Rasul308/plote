@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-personality: "Kalam", cursive;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #FFFFFF;
+  color: #1A1A1A;
+}
+
+.font-personality {
+  font-family: 'Kalam', cursive;
+}
+
+/* Custom styling for leaflet marker tooltips and popups */
+.leaflet-container {
+  font-family: "DM Sans", sans-serif;
+  background-color: #eedfc7 !important; /* Premium warm sand base */
+}
+
+/* Rounded, clean aesthetics for the leaflet zoom controls */
+.leaflet-bar {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.leaflet-bar a {
+  background-color: #ffffff !important;
+  color: #1A1A1A !important;
+  border-bottom: 1px solid #E5E7EB !important;
+  transition: all 0.2s;
+}
+
+.leaflet-bar a:hover {
+  background-color: #F3F4F6 !important;
+  color: #3E8C7C !important;
+}
+
+.leaflet-bar a.leaflet-disabled {
+  background-color: #F3F4F6 !important;
+  color: #9CA3AF !important;
+}
+
+/* Hide leaflet attribution if space is tight, or style it beautifully */
+.leaflet-control-attribution {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  color: #6B7280 !important;
+  font-size: 10px !important;
+}
+
+/* Map shadows and border */
+.custom-leaflet-map {
+  border: 1px solid #3E8C7C;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 8s infinite linear;
+}
